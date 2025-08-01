@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="pixel asterisk" unicode="&#x2022;" d="M399 50v199h-99-100v-99-100h-100-100v100 101h100 100v99 99h-100-100v101 100h100 100v-100-99h100 99v199 200h101 101v-200-199h99 100v99 100h100 100v-100-101h-100-100v-99-99h100 100v-101-100h-100-100v100 99h-100-99v-199-200h-101-101z m200 300v99h-99-99v-99-99h99 99z" horiz-adv-x="1000" />
+
+<glyph glyph-name="path2" unicode="&#x25cf;" d="M399 50v199h-99-100v-99-100h-100-100v100 101h100 100v99 99h-100-100v101 100h100 100v-100-99h100 99v199 200h101 101v-200-199h99 100v99 100h100 100v-100-101h-100-100v-99-99h100 100v-101-100h-100-100v100 99h-100-99v-199-200h-101-101z m200 300v99h-99-99v-99-99h99 99z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
