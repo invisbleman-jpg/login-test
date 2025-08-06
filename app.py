@@ -1,5 +1,13 @@
 from flask import Flask, render_template, redirect, request, url_for, session # type: ignore
+from cryptography.fernet import Fernet #type:ignore
 import json
+
+with open("C:/Users/Lovevett/Downloads/Programmieren/Irgendwas in HTML/Amsterdam/secret_key.key", "r") as f:
+    key = f.read().encode("utf-8")
+
+fernet = Fernet(key)
+
+k = json.load(open("C:/Users/Lovevett/Downloads/Programmieren/Irgendwas in HTML/Amsterdam/user.JSON"))
 
 app = Flask(__name__)
 app.secret_key = "8Mdfk2kfm2kf2)e3=üs"
@@ -13,11 +21,10 @@ def index():
         username_inp = request.form["username"]
         password_inp = request.form["password"]
 
-        a = open("C:/Users/Lovevett/Downloads/Programmieren/Irgendwas in HTML/Amsterdam/user.JSON")
+        username, password = fernet.decrypt(((k["user"][0]["username"]).encode("utf-8"))), fernet.decrypt(((k["user"][1]["password"]).encode("utf-8")))
 
-        b = json.load(a)
 
-        if username_inp == b["user"][0]["username"] and password_inp == b["user"][1]["password"]:
+        if username_inp == username.decode("utf-8") and password_inp == password.decode("utf-8"):
 
         
             session["username"] = username_inp
