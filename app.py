@@ -2,12 +2,12 @@ from flask import Flask, render_template, redirect, request, url_for, session # 
 from cryptography.fernet import Fernet #type:ignore
 import json
 
-with open("secret_key.key", "r") as f:
+with open("C:/Users/Lovevett/Downloads/Programmieren/Irgendwas in HTML/Amsterdam/secret_key.key", "r") as f:
     key = f.read().encode("utf-8")
 
 fernet = Fernet(key)
 
-k = json.load(open("user.JSON"))
+k = json.load(open("C:/Users/Lovevett/Downloads/Programmieren/Irgendwas in HTML/Amsterdam/user.JSON"))
 
 app = Flask(__name__)
 app.secret_key = "8Mdfk2kfm2kf2)e3=üs"
